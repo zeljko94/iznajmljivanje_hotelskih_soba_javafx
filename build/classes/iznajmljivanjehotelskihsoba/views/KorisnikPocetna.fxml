@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="742.0" prefWidth="1210.0" styleClass="background" stylesheets="@korisnikpocetna.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iznajmljivanjehotelskihsoba.controllers.KorisnikPocetnaController">
+   <children>
+      <GridPane layoutX="14.0" prefHeight="731.0" prefWidth="1210.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="64.0" prefWidth="1212.0" styleClass="naslov" text="Početna" GridPane.columnSpan="4" />
+            <ImageView fx:id="btnRezervacije" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#btnRezervacijeOnClick" onMouseEntered="#btnRezervacijeOnMouseEnter" onMouseExited="#btnRezervacijeOnMouseLeave" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../../pictures/reservations.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnSobe" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#btnSobeOnClick" onMouseEntered="#btnSobeOnMouseEnter" onMouseExited="#btnSobeOnMouseLeave" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../../pictures/rooms.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnLogout" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#btnLogoutOnClick" onMouseEntered="#btnLogoutOnMouseEnter" onMouseExited="#btnLogoutOnMouseLeave" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowSpan="2">
+               <image>
+                  <Image url="@../../pictures/logout.png" />
+               </image>
+            </ImageView>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="576.0" minWidth="10.0" prefWidth="109.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="980.0" minWidth="10.0" prefWidth="500.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="980.0" minWidth="10.0" prefWidth="401.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="980.0" minWidth="10.0" prefWidth="193.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="239.0" minHeight="0.0" prefHeight="87.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="589.0" minHeight="10.0" prefHeight="131.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="589.0" minHeight="10.0" prefHeight="195.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="589.0" minHeight="10.0" prefHeight="264.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="248.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

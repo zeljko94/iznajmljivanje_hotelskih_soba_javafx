@@ -1,0 +1,19 @@
+/*
+ * Empty Stylesheet file.
+ */
+.naslov{
+    -fx-font-family: Arial;
+    -fx-font-decoration: bold;
+    -fx-text-fill: black;
+    -fx-font-size: 55px;
+}
+.background {
+    -fx-background-color: #347ab6;
+}
+
+.lbl{
+    -fx-font-family: Arial;
+    -fx-font-decoration: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}

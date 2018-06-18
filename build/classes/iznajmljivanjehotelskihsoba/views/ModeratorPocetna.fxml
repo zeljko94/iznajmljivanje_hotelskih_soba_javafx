@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="742.0" prefWidth="1210.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iznajmljivanjehotelskihsoba.controllers.ModeratorPocetnaController">
+   <children>
+      <GridPane layoutX="14.0" prefHeight="731.0" prefWidth="1210.0">
+         <children>
+            <Button fx:id="btnUsers" mnemonicParsing="false" onAction="#btnUsersOnClick" text="Users" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btnRezervacije" mnemonicParsing="false" onAction="#btnRezervacijeOnClick" text="Rezervacije" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="btnSobe" mnemonicParsing="false" onAction="#btnSobeOnClick" text="Sobe" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#btnLogoutOnClick" text="Log Out" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefHeight="71.0" prefWidth="961.0" styleClass="naslov" text="Moderator - Dashboard" GridPane.columnIndex="1" GridPane.columnSpan="2">
+               <font>
+                  <Font name="42 Emancipated" size="25.0" />
+               </font>
+            </Label>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="576.0" minWidth="10.0" prefWidth="109.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="980.0" minWidth="10.0" prefWidth="500.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="980.0" minWidth="10.0" prefWidth="420.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="980.0" minWidth="10.0" prefWidth="175.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="239.0" minHeight="0.0" prefHeight="77.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="589.0" minHeight="10.0" prefHeight="300.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="589.0" minHeight="10.0" prefHeight="303.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="248.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+   <stylesheets>
+      <URL value="@adminpocetna.css" />
+   </stylesheets>
+</AnchorPane>

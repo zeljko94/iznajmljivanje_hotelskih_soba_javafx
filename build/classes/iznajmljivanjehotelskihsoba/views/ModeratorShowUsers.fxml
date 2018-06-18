@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="808.0" prefWidth="1282.0" styleClass="background" stylesheets="@moderatorshowusers.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iznajmljivanjehotelskihsoba.controllers.ModeratorShowUsersController">
+   <children>
+      <GridPane layoutY="1.0" prefHeight="814.0" prefWidth="1282.0">
+         <children>
+            <TableView fx:id="tableUsers" prefHeight="820.0" prefWidth="1093.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <columns>
+                  <TableColumn fx:id="tableColIme" prefWidth="228.0" text="Ime" />
+                  <TableColumn fx:id="tableColPrezime" prefWidth="250.0" text="Prezime" />
+                  <TableColumn fx:id="tableColUsername" prefWidth="165.0" text="Username" />
+                  <TableColumn fx:id="tableColEmail" prefWidth="322.0" text="E-mail" />
+                  <TableColumn fx:id="tableColPrivilegije" minWidth="9.0" prefWidth="157.0" text="Privilegije" />
+               </columns>
+            </TableView>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="btnDodaj" mnemonicParsing="false" onAction="#btnDodajOnClick" text="Dodaj" />
+                  <Button fx:id="btnBrisi" mnemonicParsing="false" onAction="#btnBrisiOnClick" text="Brisi" />
+                  <Button fx:id="bntIzmjeni" mnemonicParsing="false" onAction="#btnIzmjeniOnClick" text="Izmjeni" />
+                  <Button fx:id="btnNazad" mnemonicParsing="false" onAction="#btnNazadOnClick" text="Nazad" />
+               </children>
+            </VBox>
+            <Label prefHeight="21.0" prefWidth="1303.0" styleClass="naslov" text="Pregled korisnika" GridPane.columnSpan="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="543.0" minWidth="10.0" prefWidth="159.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1144.0" minWidth="10.0" prefWidth="1123.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="820.0" minHeight="10.0" prefHeight="103.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="820.0" minHeight="10.0" prefHeight="711.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

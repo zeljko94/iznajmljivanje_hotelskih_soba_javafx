@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="1020.0" styleClass="background" stylesheets="@adminizmjenikorisnika.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iznajmljivanjehotelskihsoba.controllers.AdminIzmjeniKorisnikaController">
+   <children>
+      <GridPane layoutX="2.0" prefHeight="518.0" prefWidth="981.0">
+         <children>
+            <Label styleClass="lbl" text="Ime:" GridPane.rowIndex="1" />
+            <Label styleClass="lbl" text="Prezime:" GridPane.rowIndex="2" />
+            <Label styleClass="lbl" text="Korisničko ime:" GridPane.rowIndex="3" />
+            <Label styleClass="lbl" text="E-mail:" GridPane.rowIndex="4" />
+            <Label styleClass="lbl" text="Lozinka:" GridPane.rowIndex="5" />
+            <Label styleClass="lbl" text="Privilegije" GridPane.rowIndex="6" />
+            <Label fx:id="lblErrorMessage" prefHeight="41.0" prefWidth="981.0" styleClass="lbl" GridPane.columnSpan="2" GridPane.rowIndex="8" />
+            <TextField fx:id="txtIme" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtPrezime" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtUsername" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="txtPassword" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ComboBox fx:id="comboPrivilegije" prefHeight="31.0" prefWidth="191.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="btnSpremi" mnemonicParsing="false" onAction="#btnSpremiOnClick" text="Spremi" GridPane.rowIndex="7" />
+            <Button fx:id="btnReset" mnemonicParsing="false" onAction="#btnResetOnClick" text="Reset" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button fx:id="btnNazad" mnemonicParsing="false" onAction="#btnNazadOnClick" text="Nazad" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </Button>
+            <Label prefHeight="21.0" prefWidth="1041.0" styleClass="naslov" text="Izmjena korisnika" GridPane.columnSpan="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="491.0" minWidth="10.0" prefWidth="152.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="856.0" minWidth="10.0" prefWidth="829.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="214.0" minHeight="0.0" prefHeight="94.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="438.0" minHeight="3.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="559.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="559.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="559.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="559.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="559.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="559.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="559.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

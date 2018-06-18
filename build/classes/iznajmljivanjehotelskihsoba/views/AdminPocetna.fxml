@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="742.0" prefWidth="1210.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iznajmljivanjehotelskihsoba.controllers.AdminPocetnaController">
+    <stylesheets>
+        <URL value="@adminpocetna.css" />
+    </stylesheets>
+   <children>
+      <GridPane layoutX="14.0" prefHeight="731.0" prefWidth="1210.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="576.0" minWidth="10.0" prefWidth="109.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="980.0" minWidth="10.0" prefWidth="500.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="980.0" minWidth="10.0" prefWidth="420.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="980.0" minWidth="10.0" prefWidth="175.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="239.0" minHeight="0.0" prefHeight="77.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="589.0" minHeight="10.0" prefHeight="300.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="589.0" minHeight="10.0" prefHeight="303.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="248.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="71.0" prefWidth="1227.0" styleClass="naslov" text="Admin - Dashboard" GridPane.columnSpan="4">
+               <font>
+                  <Font name="42 Emancipated" size="25.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="naslov" GridPane.rowIndex="1" GridPane.rowSpan="3" />
+            <ImageView fx:id="btnUsers" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#btnUsersOnClick" onMouseEntered="#btnUsersOnMouseEnter" onMouseExited="#btnUsersOnMouseLeave" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../../pictures/users.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRezervacije" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#btnRezervacijeOnClick" onMouseEntered="#btnRezervacijeOnMouseEnter" onMouseExited="#btnRezervacijeOnMouseLeave" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../../pictures/reservations.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnSobe" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#btnSobeOnClick" onMouseEntered="#btnSobeOnMouseEnter" onMouseExited="#btnSobeOnMouseLeave" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../../pictures/rooms.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnLogout" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#btnLogoutOnClick" onMouseEntered="#btnLogoutOnMouseEnter" onMouseExited="#btnLogoutOnMouseLeave" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../../pictures/logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
